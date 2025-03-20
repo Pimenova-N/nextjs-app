@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-neutral-100 dark:text-white dark:bg-gray-700;
+  }
+}
